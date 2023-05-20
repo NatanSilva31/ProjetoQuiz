@@ -172,7 +172,7 @@ public class Quiz {
     public static void Créditos() {
         System.out.println("Criadores do Quiz:");
         System.out.println(" ______________");
-        System.out.println("|   nada           |");
+        System.out.println("|              |");
         System.out.println("|   Natanael   |");
         System.out.println("|   Karen      |");
         System.out.println("|   Amanda     |");
