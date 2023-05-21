@@ -1,3 +1,4 @@
+// galeria de importações//
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -6,14 +7,17 @@ import java.util.List;
 
 public class Quiz {
 
+    // variaveis globais para armazenar valores que são utilizadas ao decorrer do jogo//
     static int pontuacaoQuiz = 0;
     static int pontuacaoErrado = 0;
     static String nome;
 
+    //classe principal onde iniciamos com apenas um método, onde ele executa outros blocos/funções//
     public static void main(String[] args) {
         Inicializador();
     }
 
+    //método Inicializador, aqui se encontra o sistema de escolha do menu//
     public static void Inicializador() {
         Scanner digitar = new Scanner(System.in);
 
@@ -44,8 +48,11 @@ public class Quiz {
 
     }
 
+    //método Instruções, aqui está armazenado os textos// 
     public static void Instruções() {
         System.out.println("Você está em instruções");
+        System.out.println("| _________________________________________________________________________________________________|");
+        System.out.println("|                      Este Quiz se trata de um projeto Acadêmico             ca                      ");
         System.out.println("| _________________________________________________________________________________________________|");
         System.out.println("| 1 - Leia atentamente cada pergunta antes de selecionar sua resposta.                              ");
         System.out.println("| _________________________________________________________________________________________________|");
@@ -65,6 +72,7 @@ public class Quiz {
         teclaContinuar();
     }
 
+    //método tecla, neste método está armazado uma função que o usuário precisar teclar algo para seguir com o jogo//
     public static void teclaContinuar() {
         Scanner entrada = new Scanner(System.in);
         System.out.println("----------------------------|");
@@ -77,6 +85,7 @@ public class Quiz {
         }
     }
 
+    //método opções, neste método se encontra as dificuldades que o usuário poderá escolher, variando entre 3 dificuldades//
     public static void telaOpcoes() {
         System.out.println("\nQual modo deseja jogar " + nome + "?");
         System.out.println("1) Fácil");
@@ -84,6 +93,7 @@ public class Quiz {
         System.out.println("3) Difícil");
     }
 
+    //método Jogar, aqui se encontra nosso método onde o jogo ocorre, a partir dele o usuário é jogado para outro bloco (dificuldade escolhida)//
     public static void Jogar() {
         pontuacaoQuiz = 0;
         pontuacaoErrado = 0;
@@ -129,6 +139,7 @@ public class Quiz {
 
     }
 
+    //método Jogar1, aplicamos este método caso o jogador queira reinicar o jogo sem precisar informar o nome novamente, é o mesmo método Jogar porém sem algumas informações//
     public static void Jogar1() {
         pontuacaoQuiz = 0;
         pontuacaoErrado = 0;
@@ -169,22 +180,25 @@ public class Quiz {
         }
     }
 
+    //método Créditos, aqui o sistema captura os desenvolvedores deste projeto//
     public static void Créditos() {
         System.out.println("Criadores do Quiz:");
         System.out.println(" ______________");
         System.out.println("|              |");
         System.out.println("|   Natanael   |");
-        System.out.println("|   Karen      |");
         System.out.println("|   Amanda     |");
+        System.out.println("|   Karen      |");
         System.out.println("|   Vinicius   |");
         System.out.println("|______________|");
         teclaContinuar();
     }
 
+    //método Sair, ele é utilizado quando o usuário deseja sair do Quiz quando for acionado//
     public static void Sair() {
         System.out.println("Obrigado por jogar nosso Quiz, volte sempre !");
     }
 
+    //método Menu, aqui está armezado o nosso "Layout" do menu, ou seja, a interface//
     public static void Menu() {
         System.out.println("   ________________________   ");
         System.out.println("  |                        |  ");
@@ -201,6 +215,7 @@ public class Quiz {
         System.out.println("|____________________________|");
     }
 
+    //método Fácil, aqui está o nosso bloco inicializador da dificuldade Fácil, se encontra com as 10 perguntas//
     public static void Fácil() {
         System.out.println("Ficou com medo Sr(a). " + nome + "? Rs");
         Pergunta01f();
@@ -215,6 +230,7 @@ public class Quiz {
         Pergunta10f();
     }
 
+    //método Médio, aqui está o nosso bloco inicializador da dificuldade Médio, se encontra com as 10 perguntas//
     public static void Médio() {
         System.out.println("Você gosta de arriscar Sr(a). " + nome + "? ");
         Pergunta01m();
@@ -229,6 +245,7 @@ public class Quiz {
         Pergunta10m();
     }
 
+    //método Dificil, aqui está o nosso bloco inicializador da dificuldade Dificil, se encontra com as 10 perguntas//
     public static void Difícil() {
         System.out.println("Muito corajoso Sr(a). " + nome + ", RS ");
         Pergunta01d();
@@ -243,6 +260,9 @@ public class Quiz {
         Pergunta10d();
     }
 
+    //método de perguntas, aqui está armazenada todo o Script referente a pergunta, laços, switch, sistema de pontuação, captura de pergunta e resposta e etc//
+    // ao fim de cada questão, o usuário na dificuldade Fácil, tem 3 tentativas de resposta//
+    // para os outros métodos, o Script se mantém o mesmo e só ocorre alteração nas questões e alternativas//
     public static void Pergunta01f() {
 
         boolean acertou = false;
@@ -1169,7 +1189,10 @@ public class Quiz {
         }
     }
 
-    //inicio do fluxo das perguntas na dificuldade média
+    //inicio do fluxo das perguntas na dificuldade média//
+    //método de perguntas, aqui está armazenada todo o Script referente a pergunta, laços, switch, sistema de pontuação, captura de pergunta e resposta e etc//
+    // ao fim de cada questão, o usuário na dificuldade Média, tem 2 tentativas de resposta//
+    // para os outros métodos, o Script se mantém o mesmo e só ocorre alteração nas questões e alternativas//
     public static void Pergunta01m() {
         boolean acertou = false;
         char resposta;
@@ -2101,7 +2124,10 @@ public class Quiz {
         }
     }
 
-    //inicio do fluxo das perguntas na dificuldade dificil
+    //inicio do fluxo das perguntas na dificuldade dificil//
+    //método de perguntas, aqui está armazenada todo o Script referente a pergunta, laços, switch, sistema de pontuação, captura de pergunta e resposta e etc//
+    // ao fim de cada questão, o usuário na dificuldade Dificil, tem 1 tentativa de resposta//
+    // para os outros métodos, o Script se mantém o mesmo e só ocorre alteração nas questões e alternativas//
     public static void Pergunta01d() {
         boolean acertou = false;
         char resposta;
@@ -2185,7 +2211,7 @@ public class Quiz {
                     break;
             }
 
-        } while (tentativas < 2 && !acertou);
+        } while (tentativas < 1 && !acertou);
         if (acertou) {
             System.out.println("Você acertou na " + tentativas + " tentativas");
         } else {
@@ -2279,7 +2305,7 @@ public class Quiz {
                     break;
             }
 
-        } while (tentativas < 2 && !acertou);
+        } while (tentativas < 1 && !acertou);
         if (acertou) {
             System.out.println("Você acertou na " + tentativas + " tentativas");
         } else {
@@ -2468,7 +2494,7 @@ public class Quiz {
                     break;
             }
 
-        } while (tentativas < 2 && !acertou);
+        } while (tentativas < 1 && !acertou);
         if (acertou) {
             System.out.println("Você acertou na " + tentativas + " tentativas");
         } else {
@@ -2485,7 +2511,7 @@ public class Quiz {
         int tentativas = 0;
         Scanner entrada = new Scanner(System.in);
 
-        String resposta5 = "São Petersburgo";
+        String resposta5 = "Minsk";
 
         List alternativas = new ArrayList();
         alternativas.add("Moscou");
@@ -2562,7 +2588,7 @@ public class Quiz {
                     break;
             }
 
-        } while (tentativas < 2 && !acertou);
+        } while (tentativas < 1 && !acertou);
         if (acertou) {
             System.out.println("Você acertou na " + tentativas + " tentativas");
         } else {
@@ -2656,7 +2682,7 @@ public class Quiz {
                     break;
             }
 
-        } while (tentativas < 2 && !acertou);
+        } while (tentativas < 1 && !acertou);
         if (acertou) {
             System.out.println("Você acertou na " + tentativas + " tentativas");
         } else {
@@ -2673,18 +2699,18 @@ public class Quiz {
         int tentativas = 0;
         Scanner entrada = new Scanner(System.in);
 
-        String resposta7 = "William Faulkner";
+        String resposta7 = "Descartes";
 
         List alternativas = new ArrayList();
-        alternativas.add("Ernest Hemingway");
-        alternativas.add("Gabriel García Márquez");
-        alternativas.add("Albert Camus");
-        alternativas.add("William Faulkner");
-        alternativas.add("Hermann Hesse");
+        alternativas.add("Platão");
+        alternativas.add("Galileu Galilei");
+        alternativas.add("Descartes");
+        alternativas.add("Sócrates");
+        alternativas.add("Francis Bacon");
 
         do {
             Collections.shuffle(alternativas);
-            System.out.println("07) Qual desses escritores ganhou o Prêmio Nobel de Literatura mais de uma vez?");
+            System.out.println("07) De quem é a famosa frase “Penso, logo existo”?");
             System.out.println("A) " + alternativas.get(0));
             System.out.println("B) " + alternativas.get(1));
             System.out.println("C) " + alternativas.get(2));
@@ -2750,7 +2776,7 @@ public class Quiz {
                     break;
             }
 
-        } while (tentativas < 2 && !acertou);
+        } while (tentativas < 1 && !acertou);
         if (acertou) {
             System.out.println("Você acertou na " + tentativas + " tentativas");
         } else {
@@ -2843,7 +2869,7 @@ public class Quiz {
                     break;
             }
 
-        } while (tentativas < 2 && !acertou);
+        } while (tentativas < 1 && !acertou);
         if (acertou) {
             System.out.println("Você acertou na " + tentativas + " tentativas");
         } else {
@@ -2860,18 +2886,18 @@ public class Quiz {
         int tentativas = 0;
         Scanner entrada = new Scanner(System.in);
 
-        String resposta9 = "Seychelles";
+        String resposta9 = "108";
 
         List alternativas = new ArrayList();
-        alternativas.add("Seychelles");
-        alternativas.add("Egito");
-        alternativas.add("África do Sul");
-        alternativas.add("Nigéria");
-        alternativas.add("Marrocos");
+        alternativas.add("113");
+        alternativas.add("109");
+        alternativas.add("108");
+        alternativas.add("118");
+        alternativas.add("92");
 
         do {
             Collections.shuffle(alternativas);
-            System.out.println("09) Qual país africano possui o maior PIB per capita?");
+            System.out.println("09) Atualmente, quantos elementos químicos a tabela periódica possui?");
             System.out.println("A) " + alternativas.get(0));
             System.out.println("B) " + alternativas.get(1));
             System.out.println("C) " + alternativas.get(2));
@@ -2937,7 +2963,7 @@ public class Quiz {
                     break;
             }
 
-        } while (tentativas < 2 && !acertou);
+        } while (tentativas < 1 && !acertou);
         if (acertou) {
             System.out.println("Você acertou na " + tentativas + " tentativas");
         } else {
@@ -3031,7 +3057,7 @@ public class Quiz {
                     break;
             }
 
-        } while (tentativas < 2 && !acertou);
+        } while (tentativas < 1 && !acertou);
         if (acertou) {
             System.out.println("Você acertou na " + tentativas + " tentativas");
         } else {
@@ -3041,14 +3067,16 @@ public class Quiz {
         }
     }
 
+    //método onde está armazenada String tipo Texto para quando o usuário responder corretamente//
     public static void RespostaCorreta() {
         System.out.println("Resposta Correta!");
     }
 
+    //método onde está armazenada String tipo Texto para quando o usuário responder errado//
     public static void RespostaIncorreta() {
         System.out.println("Resposta Incorreta");
     }
 
 }
 
-}
+
