@@ -52,7 +52,7 @@ public class Quiz {
     public static void Instruções() {
         System.out.println("Você está em instruções");
         System.out.println("| _________________________________________________________________________________________________|");
-        System.out.println("|                      Este Quiz se trata de um projeto Acadêmico             ca                      ");
+        System.out.println("|                      Este Quiz se trata de um projeto Acadêmico                                   ");
         System.out.println("| _________________________________________________________________________________________________|");
         System.out.println("| 1 - Leia atentamente cada pergunta antes de selecionar sua resposta.                              ");
         System.out.println("| _________________________________________________________________________________________________|");
@@ -218,6 +218,8 @@ public class Quiz {
     //método Fácil, aqui está o nosso bloco inicializador da dificuldade Fácil, se encontra com as 10 perguntas//
     public static void Fácil() {
         System.out.println("Ficou com medo Sr(a). " + nome + "? Rs");
+        System.out.println("Lembrando que na dificuldade fácil, é permitido 3 tentativas.");
+        System.out.println("Divirta - se !");
         Pergunta01f();
         Pergunta02f();
         Pergunta03f();
@@ -233,6 +235,8 @@ public class Quiz {
     //método Médio, aqui está o nosso bloco inicializador da dificuldade Médio, se encontra com as 10 perguntas//
     public static void Médio() {
         System.out.println("Você gosta de arriscar Sr(a). " + nome + "? ");
+        System.out.println("Lembrando que na dificuldade médio, é permitido 2 tentativas.");
+        System.out.println("Divirta - se !");
         Pergunta01m();
         Pergunta02m();
         Pergunta03m();
@@ -248,6 +252,8 @@ public class Quiz {
     //método Dificil, aqui está o nosso bloco inicializador da dificuldade Dificil, se encontra com as 10 perguntas//
     public static void Difícil() {
         System.out.println("Muito corajoso Sr(a). " + nome + ", RS ");
+        System.out.println("Lembrando que na dificuldade difícil, é permitido 1 tentativa.");
+        System.out.println("Divirta - se !");
         Pergunta01d();
         Pergunta02d();
         Pergunta03d();
@@ -284,7 +290,7 @@ public class Quiz {
             Collections.shuffle(alternativas);
 
             System.out.println(
-                    "1) Júlio Prestes foi um dos presidentes eleitos do Brasil pelo voto popular no período da República Velha. Em qual perido ocorreu?"
+                    "\n1) Júlio Prestes foi um dos presidentes eleitos do Brasil pelo voto popular no período da República Velha. Em qual perido ocorreu?"
                     + "");
             System.out.println("A) " + alternativas.get(0));
             System.out.println("B) " + alternativas.get(1));
@@ -565,7 +571,7 @@ public class Quiz {
         do {
             Collections.shuffle(alternativas);
 
-            System.out.println("4) Qual é o nome do maior planeta do sistema solar?" + "");
+            System.out.println("\n4) Qual é o nome do maior planeta do sistema solar?" + "");
             System.out.println("A) " + alternativas.get(0));
             System.out.println("B) " + alternativas.get(1));
             System.out.println("C) " + alternativas.get(2));
@@ -654,7 +660,7 @@ public class Quiz {
         do {
             Collections.shuffle(alternativas);
 
-            System.out.println("5) Qual é a capital da Espanha?" + "");
+            System.out.println("\n5) Qual é a capital da Espanha?" + "");
             System.out.println("A) " + alternativas.get(0));
             System.out.println("B) " + alternativas.get(1));
             System.out.println("C) " + alternativas.get(2));
@@ -743,7 +749,7 @@ public class Quiz {
         do {
             Collections.shuffle(alternativas);
 
-            System.out.println("6) Qual é o país mais populoso do mundo?" + "");
+            System.out.println("\n6) Qual é o país mais populoso do mundo?" + "");
             System.out.println("A) " + alternativas.get(0));
             System.out.println("B) " + alternativas.get(1));
             System.out.println("C) " + alternativas.get(2));
@@ -834,7 +840,7 @@ public class Quiz {
 
         do {
             Collections.shuffle(alternativas);
-            System.out.println("7) Qual é a cor da pele dos ursos polares?");
+            System.out.println("\n7) Qual é a cor da pele dos ursos polares?");
             System.out.println("A) " + alternativas.get(0));
             System.out.println("B) " + alternativas.get(1));
             System.out.println("C) " + alternativas.get(2));
@@ -927,7 +933,7 @@ public class Quiz {
 
         do {
             Collections.shuffle(alternativas);
-            System.out.println("8) Qual é o nome da pessoa que escreve livros?");
+            System.out.println("\n8) Qual é o nome da pessoa que escreve livros?");
             System.out.println("A) " + alternativas.get(0));
             System.out.println("B) " + alternativas.get(1));
             System.out.println("C) " + alternativas.get(2));
@@ -1020,7 +1026,7 @@ public class Quiz {
 
         do {
             Collections.shuffle(alternativas);
-            System.out.println("9) Qual é o nome da capital do Japão?");
+            System.out.println("\n9) Qual é o nome da capital do Japão?");
             System.out.println("A) " + alternativas.get(0));
             System.out.println("B) " + alternativas.get(1));
             System.out.println("C) " + alternativas.get(2));
@@ -1113,7 +1119,7 @@ public class Quiz {
 
         do {
             Collections.shuffle(alternativas);
-            System.out.println("10) Qual é a cor do sangue das veias?");
+            System.out.println("\n10) Qual é a cor do sangue das veias?");
             System.out.println("A) " + alternativas.get(0));
             System.out.println("B) " + alternativas.get(1));
             System.out.println("C) " + alternativas.get(2));
@@ -1210,7 +1216,7 @@ public class Quiz {
 
         do {
             Collections.shuffle(alternativas);
-            System.out.println("01) Qual é o nome do maior deserto do mundo?");
+            System.out.println("\n01) Qual é o nome do maior deserto do mundo?");
             System.out.println("A) " + alternativas.get(0));
             System.out.println("B) " + alternativas.get(1));
             System.out.println("C) " + alternativas.get(2));
@@ -1280,7 +1286,7 @@ public class Quiz {
         if (acertou) {
             System.out.println("Você acertou na " + tentativas + " tentativas");
         } else {
-            System.out.println("Você errou nas 3 tentativas.");
+            System.out.println("Você errou nas 2 tentativas.");
             int pontuacaoErrada = 1;
             pontuacaoErrado += pontuacaoErrada;
         }
@@ -1303,7 +1309,7 @@ public class Quiz {
 
         do {
             Collections.shuffle(alternativas);
-            System.out.println("02) Em que ano ocorreu a queda do Muro de Berlim?");
+            System.out.println("\n02) Em que ano ocorreu a queda do Muro de Berlim?");
             System.out.println("A) " + alternativas.get(0));
             System.out.println("B) " + alternativas.get(1));
             System.out.println("C) " + alternativas.get(2));
@@ -1373,7 +1379,7 @@ public class Quiz {
         if (acertou) {
             System.out.println("Você acertou na " + tentativas + " tentativas");
         } else {
-            System.out.println("Você errou nas 3 tentativas.");
+            System.out.println("Você errou nas 2 tentativas.");
             int pontuacaoErrada = 1;
             pontuacaoErrado += pontuacaoErrada;
         }
@@ -1396,7 +1402,7 @@ public class Quiz {
 
         do {
             Collections.shuffle(alternativas);
-            System.out.println("03) Qual é o nome da maior cordilheira do mundo?");
+            System.out.println("\n03) Qual é o nome da maior cordilheira do mundo?");
             System.out.println("A) " + alternativas.get(0));
             System.out.println("B) " + alternativas.get(1));
             System.out.println("C) " + alternativas.get(2));
@@ -1466,7 +1472,7 @@ public class Quiz {
         if (acertou) {
             System.out.println("Você acertou na " + tentativas + " tentativas");
         } else {
-            System.out.println("Você errou nas 3 tentativas.");
+            System.out.println("Você errou nas 2 tentativas.");
             int pontuacaoErrada = 1;
             pontuacaoErrado += pontuacaoErrada;
         }
@@ -1489,7 +1495,7 @@ public class Quiz {
 
         do {
             Collections.shuffle(alternativas);
-            System.out.println("04) Qual é o nome do navegador português que chegou ao Brasil em 1500?");
+            System.out.println("\n04) Qual é o nome do navegador português que chegou ao Brasil em 1500?");
             System.out.println("A) " + alternativas.get(0));
             System.out.println("B) " + alternativas.get(1));
             System.out.println("C) " + alternativas.get(2));
@@ -1559,7 +1565,7 @@ public class Quiz {
         if (acertou) {
             System.out.println("Você acertou na " + tentativas + " tentativas");
         } else {
-            System.out.println("Você errou nas 3 tentativas.");
+            System.out.println("Você errou nas 2 tentativas.");
             int pontuacaoErrada = 1;
             pontuacaoErrado += pontuacaoErrada;
         }
@@ -1582,7 +1588,7 @@ public class Quiz {
 
         do {
             Collections.shuffle(alternativas);
-            System.out.println("05) Qual é o nome do quarto planeta do sistema solar?");
+            System.out.println("\n05) Qual é o nome do quarto planeta do sistema solar?");
             System.out.println("A) " + alternativas.get(0));
             System.out.println("B) " + alternativas.get(1));
             System.out.println("C) " + alternativas.get(2));
@@ -1652,7 +1658,7 @@ public class Quiz {
         if (acertou) {
             System.out.println("Você acertou na " + tentativas + " tentativas");
         } else {
-            System.out.println("Você errou nas 3 tentativas.");
+            System.out.println("Você errou nas 2 tentativas.");
             int pontuacaoErrada = 1;
             pontuacaoErrado += pontuacaoErrada;
         }
@@ -1675,7 +1681,7 @@ public class Quiz {
 
         do {
             Collections.shuffle(alternativas);
-            System.out.println("06) Qual é o nome da maior cadeia montanhosa da América do Norte?");
+            System.out.println("\n06) Qual é o nome da maior cadeia montanhosa da América do Norte?");
             System.out.println("A) " + alternativas.get(0));
             System.out.println("B) " + alternativas.get(1));
             System.out.println("C) " + alternativas.get(2));
@@ -1745,7 +1751,7 @@ public class Quiz {
         if (acertou) {
             System.out.println("Você acertou na " + tentativas + " tentativas");
         } else {
-            System.out.println("Você errou nas 3 tentativas.");
+            System.out.println("Você errou nas 2 tentativas.");
             int pontuacaoErrada = 1;
             pontuacaoErrado += pontuacaoErrada;
         }
@@ -1769,7 +1775,7 @@ public class Quiz {
         do {
             Collections.shuffle(alternativas);
             System.out.println(
-                    "07) Qual é o nome do presidente americano que proclamou a emancipação dos escravos em 1863?");
+                    "\n07) Qual é o nome do presidente americano que proclamou a emancipação dos escravos em 1863?");
             System.out.println("A) " + alternativas.get(0));
             System.out.println("B) " + alternativas.get(1));
             System.out.println("C) " + alternativas.get(2));
@@ -1839,7 +1845,7 @@ public class Quiz {
         if (acertou) {
             System.out.println("Você acertou na " + tentativas + " tentativas");
         } else {
-            System.out.println("Você errou nas 3 tentativas.");
+            System.out.println("Você errou nas 2 tentativas.");
             int pontuacaoErrada = 1;
             pontuacaoErrado += pontuacaoErrada;
         }
@@ -1862,7 +1868,7 @@ public class Quiz {
 
         do {
             Collections.shuffle(alternativas);
-            System.out.println("08) Qual é o nome da menor e mais rasa massa de água salgada do mundo?");
+            System.out.println("\n08) Qual é o nome da menor e mais rasa massa de água salgada do mundo?");
             System.out.println("A) " + alternativas.get(0));
             System.out.println("B) " + alternativas.get(1));
             System.out.println("C) " + alternativas.get(2));
@@ -1932,7 +1938,7 @@ public class Quiz {
         if (acertou) {
             System.out.println("Você acertou na " + tentativas + " tentativas");
         } else {
-            System.out.println("Você errou nas 3 tentativas.");
+            System.out.println("Você errou nas 2 tentativas.");
             int pontuacaoErrada = 1;
             pontuacaoErrado += pontuacaoErrada;
         }
@@ -1955,7 +1961,7 @@ public class Quiz {
 
         do {
             Collections.shuffle(alternativas);
-            System.out.println("09) Qual é o nome da autora da saga Harry Potter?");
+            System.out.println("\n09) Qual é o nome da autora da saga Harry Potter?");
             System.out.println("A) " + alternativas.get(0));
             System.out.println("B) " + alternativas.get(1));
             System.out.println("C) " + alternativas.get(2));
@@ -2025,7 +2031,7 @@ public class Quiz {
         if (acertou) {
             System.out.println("Você acertou na " + tentativas + " tentativas");
         } else {
-            System.out.println("Você errou nas 3 tentativas.");
+            System.out.println("Você errou nas 2 tentativas.");
             int pontuacaoErrada = 1;
             pontuacaoErrado += pontuacaoErrada;
         }
@@ -2048,7 +2054,7 @@ public class Quiz {
 
         do {
             Collections.shuffle(alternativas);
-            System.out.println("10) Qual é o país com a maior área territorial do mundo?");
+            System.out.println("\n10) Qual é o país com a maior área territorial do mundo?");
             System.out.println("A) " + alternativas.get(0));
             System.out.println("B) " + alternativas.get(1));
             System.out.println("C) " + alternativas.get(2));
@@ -2118,7 +2124,7 @@ public class Quiz {
         if (acertou) {
             System.out.println("Você acertou na " + tentativas + " tentativas");
         } else {
-            System.out.println("Você errou nas 3 tentativas.");
+            System.out.println("Você errou nas 2 tentativas.");
             int pontuacaoErrada = 1;
             pontuacaoErrado += pontuacaoErrada;
         }
@@ -2145,7 +2151,7 @@ public class Quiz {
 
         do {
             Collections.shuffle(alternativas);
-            System.out.println("01) Qual é o país com a maior área territorial do mundo?");
+            System.out.println("\n01) Qual é o país com a maior área territorial do mundo?");
             System.out.println("A) " + alternativas.get(0));
             System.out.println("B) " + alternativas.get(1));
             System.out.println("C) " + alternativas.get(2));
@@ -2215,7 +2221,7 @@ public class Quiz {
         if (acertou) {
             System.out.println("Você acertou na " + tentativas + " tentativas");
         } else {
-            System.out.println("Você errou nas 3 tentativas.");
+            System.out.println("Você errou na 1º tentativa.");
             int pontuacaoErrada = 1;
             pontuacaoErrado += pontuacaoErrada;
         }
@@ -2239,7 +2245,7 @@ public class Quiz {
 
         do {
             Collections.shuffle(alternativas);
-            System.out.println("02) Qual foi o primeiro presidente eleito democraticamente na África do Sul, após o fim do apartheid?");
+            System.out.println("\n02) Qual foi o primeiro presidente eleito democraticamente na África do Sul, após o fim do apartheid?");
             System.out.println("A) " + alternativas.get(0));
             System.out.println("B) " + alternativas.get(1));
             System.out.println("C) " + alternativas.get(2));
@@ -2309,7 +2315,7 @@ public class Quiz {
         if (acertou) {
             System.out.println("Você acertou na " + tentativas + " tentativas");
         } else {
-            System.out.println("Você errou nas 3 tentativas.");
+            System.out.println("Você errou na 1º tentativa.");
             int pontuacaoErrada = 1;
             pontuacaoErrado += pontuacaoErrada;
         }
@@ -2334,7 +2340,7 @@ public class Quiz {
 
         do {
             Collections.shuffle(alternativas);
-            System.out.println("03) Quem escreveu a peça teatral 'Esperando Godot'?");
+            System.out.println("\n03) Quem escreveu a peça teatral 'Esperando Godot'?");
             System.out.println("A) " + alternativas.get(0));
             System.out.println("B) " + alternativas.get(1));
             System.out.println("C) " + alternativas.get(2));
@@ -2404,7 +2410,7 @@ public class Quiz {
         if (acertou) {
             System.out.println("Você acertou na " + tentativas + " tentativas");
         } else {
-            System.out.println("Você errou nas 3 tentativas.");
+            System.out.println("Você errou na 1º tentativa.");
             int pontuacaoErrada = 1;
             pontuacaoErrado += pontuacaoErrada;
         }
@@ -2428,7 +2434,7 @@ public class Quiz {
 
         do {
             Collections.shuffle(alternativas);
-            System.out.println("04) Qual o nome do processo de divisão celular que resulta em quatro células haploides, cada uma com metade do número de cromossomos da célula original?");
+            System.out.println("\n04) Qual o nome do processo de divisão celular que resulta em quatro células haploides, cada uma com metade do número de cromossomos da célula original?");
             System.out.println("A) " + alternativas.get(0));
             System.out.println("B) " + alternativas.get(1));
             System.out.println("C) " + alternativas.get(2));
@@ -2498,7 +2504,7 @@ public class Quiz {
         if (acertou) {
             System.out.println("Você acertou na " + tentativas + " tentativas");
         } else {
-            System.out.println("Você errou nas 3 tentativas.");
+            System.out.println("Você errou na 1º tentativa.");
             int pontuacaoErrada = 1;
             pontuacaoErrado += pontuacaoErrada;
         }
@@ -2522,7 +2528,7 @@ public class Quiz {
 
         do {
             Collections.shuffle(alternativas);
-            System.out.println("05) Em qual cidade foi realizado o primeiro congresso do Partido Comunista da União Soviética?");
+            System.out.println("\n05) Em qual cidade foi realizado o primeiro congresso do Partido Comunista da União Soviética?");
             System.out.println("A) " + alternativas.get(0));
             System.out.println("B) " + alternativas.get(1));
             System.out.println("C) " + alternativas.get(2));
@@ -2592,7 +2598,7 @@ public class Quiz {
         if (acertou) {
             System.out.println("Você acertou na " + tentativas + " tentativas");
         } else {
-            System.out.println("Você errou nas 3 tentativas.");
+            System.out.println("Você errou na 1º tentativa.");
             int pontuacaoErrada = 1;
             pontuacaoErrado += pontuacaoErrada;
         }
@@ -2616,7 +2622,7 @@ public class Quiz {
 
         do {
             Collections.shuffle(alternativas);
-            System.out.println("06) Qual a molécula responsável por armazenar e transmitir informações genéticas em todos os seres vivos?");
+            System.out.println("\n06) Qual a molécula responsável por armazenar e transmitir informações genéticas em todos os seres vivos?");
             System.out.println("A) " + alternativas.get(0));
             System.out.println("B) " + alternativas.get(1));
             System.out.println("C) " + alternativas.get(2));
@@ -2686,7 +2692,7 @@ public class Quiz {
         if (acertou) {
             System.out.println("Você acertou na " + tentativas + " tentativas");
         } else {
-            System.out.println("Você errou nas 3 tentativas.");
+            System.out.println("Você errou na 1º tentativa.");
             int pontuacaoErrada = 1;
             pontuacaoErrado += pontuacaoErrada;
         }
@@ -2710,7 +2716,7 @@ public class Quiz {
 
         do {
             Collections.shuffle(alternativas);
-            System.out.println("07) De quem é a famosa frase “Penso, logo existo”?");
+            System.out.println("\n07) De quem é a famosa frase “Penso, logo existo”?");
             System.out.println("A) " + alternativas.get(0));
             System.out.println("B) " + alternativas.get(1));
             System.out.println("C) " + alternativas.get(2));
@@ -2780,7 +2786,7 @@ public class Quiz {
         if (acertou) {
             System.out.println("Você acertou na " + tentativas + " tentativas");
         } else {
-            System.out.println("Você errou nas 3 tentativas.");
+            System.out.println("Você errou na 1º tentativa.");
             int pontuacaoErrada = 1;
             pontuacaoErrado += pontuacaoErrada;
         }
@@ -2803,7 +2809,7 @@ public class Quiz {
 
         do {
             Collections.shuffle(alternativas);
-            System.out.println("08) Quem pintou a famosa obra 'O Grito1' ?");
+            System.out.println("\n08) Quem pintou a famosa obra 'O Grito1' ?");
             System.out.println("A) " + alternativas.get(0));
             System.out.println("B) " + alternativas.get(1));
             System.out.println("C) " + alternativas.get(2));
@@ -2873,7 +2879,7 @@ public class Quiz {
         if (acertou) {
             System.out.println("Você acertou na " + tentativas + " tentativas");
         } else {
-            System.out.println("Você errou nas 3 tentativas.");
+            System.out.println("Você errou na 1º tentativa.");
             int pontuacaoErrada = 1;
             pontuacaoErrado += pontuacaoErrada;
         }
@@ -2897,7 +2903,7 @@ public class Quiz {
 
         do {
             Collections.shuffle(alternativas);
-            System.out.println("09) Atualmente, quantos elementos químicos a tabela periódica possui?");
+            System.out.println("\n09) Atualmente, quantos elementos químicos a tabela periódica possui?");
             System.out.println("A) " + alternativas.get(0));
             System.out.println("B) " + alternativas.get(1));
             System.out.println("C) " + alternativas.get(2));
@@ -2967,7 +2973,7 @@ public class Quiz {
         if (acertou) {
             System.out.println("Você acertou na " + tentativas + " tentativas");
         } else {
-            System.out.println("Você errou nas 3 tentativas.");
+            System.out.println("Você errou na 1º tentativa.");
             int pontuacaoErrada = 1;
             pontuacaoErrado += pontuacaoErrada;
         }
@@ -2991,7 +2997,7 @@ public class Quiz {
 
         do {
             Collections.shuffle(alternativas);
-            System.out.println("10) Quem foi o primeiro astronauta a caminhar na Lua?");
+            System.out.println("\n10) Quem foi o primeiro astronauta a caminhar na Lua?");
             System.out.println("A) " + alternativas.get(0));
             System.out.println("B) " + alternativas.get(1));
             System.out.println("C) " + alternativas.get(2));
@@ -3061,7 +3067,7 @@ public class Quiz {
         if (acertou) {
             System.out.println("Você acertou na " + tentativas + " tentativas");
         } else {
-            System.out.println("Você errou nas 3 tentativas.");
+            System.out.println("Você errou na 1º tentativa.");
             int pontuacaoErrada = 1;
             pontuacaoErrado += pontuacaoErrada;
         }
@@ -3078,5 +3084,3 @@ public class Quiz {
     }
 
 }
-
-
