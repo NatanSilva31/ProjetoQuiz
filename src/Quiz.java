@@ -128,7 +128,7 @@ public class Quiz {
         continuar = escolha.next().toUpperCase().charAt(0);
         switch (continuar) {
             case 'S':
-                Jogar1();
+                ReiniciarPartida();
             case 'N':
                 Sair();
         }
@@ -138,8 +138,8 @@ public class Quiz {
 
     }
 
-    //método Jogar1, aplicamos este método caso o jogador queira reinicar o jogo sem precisar informar o nome novamente, é o mesmo método Jogar porém sem algumas informações//
-    public static void Jogar1() {
+    //método ReiniciarPartida, aplicamos este método caso o jogador queira reinicar o jogo sem precisar informar o nome novamente, é o mesmo método Jogar porém sem algumas informações//
+    public static void ReiniciarPartida() {
         pontuacaoQuiz = 0;
         pontuacaoErrado = 0;
         char continuar;
@@ -170,7 +170,7 @@ public class Quiz {
         continuar = escolha.next().toUpperCase().charAt(0);
         switch (continuar) {
             case 'S':
-                Jogar1();
+                ReiniciarPartida();
             case 'N':
                 Sair();
         }
@@ -450,7 +450,7 @@ public class Quiz {
         } while (tentativas < 3 && !acertou);
 
         if (acertou) {
-            System.out.println("Voce acertou na " + tentativas + " tentativa");
+            System.out.println("Voce acertou na " + tentativas + "º tentativa");
         } else {
 
             System.out.println("Voce errou nas 3 tentaivas.");
@@ -544,7 +544,7 @@ public class Quiz {
 
         } while (tentativas < 3 && !acertou);
         if (acertou) {
-            System.out.println("Voce acertou na " + tentativas + " tentativa");
+            System.out.println("Voce acertou na " + tentativas + "º tentativa");
         } else {
             System.out.println("Voce errou nas 3 tentaivas.");
             int pontuacaoErrada = 1;
@@ -636,7 +636,7 @@ public class Quiz {
             }
         } while (tentativas < 3 && !acertou);
         if (acertou) {
-            System.out.println("Voce acertou na " + tentativas + " tentativa");
+            System.out.println("Voce acertou na " + tentativas + "º tentativa");
         }
     }
 
@@ -725,7 +725,7 @@ public class Quiz {
             }
         } while (tentativas < 3 && !acertou);
         if (acertou) {
-            System.out.println("Voce acertou na " + tentativas + " tentativa");
+            System.out.println("Voce acertou na " + tentativas + "º tentativa");
         }
     }
 
@@ -814,7 +814,7 @@ public class Quiz {
             }
         } while (tentativas < 3 && !acertou);
         if (acertou) {
-            System.out.println("Voce acertou na " + tentativas + " tentativa");
+            System.out.println("Voce acertou na " + tentativas + "º tentativa");
         } else {
             System.out.println("Voce errou nas 3 tentaivas.");
             int pontuacaoErrada = 1;
@@ -907,7 +907,7 @@ public class Quiz {
 
         } while (tentativas < 3 && !acertou);
         if (acertou) {
-            System.out.println("Você acertou na " + tentativas + " tentativas");
+            System.out.println("Você acertou na " + tentativas + "º tentativa");
         } else {
             System.out.println("Você errou nas 3 tentativas.");
             int pontuacaoErrada = 1;
@@ -1000,7 +1000,7 @@ public class Quiz {
 
         } while (tentativas < 3 && !acertou);
         if (acertou) {
-            System.out.println("Você acertou na " + tentativas + " tentativas");
+            System.out.println("Você acertou na " + tentativas + "º tentativa");
         } else {
             System.out.println("Você errou nas 3 tentativas.");
             int pontuacaoErrada = 1;
@@ -1093,7 +1093,7 @@ public class Quiz {
 
         } while (tentativas < 3 && !acertou);
         if (acertou) {
-            System.out.println("Você acertou na " + tentativas + " tentativas");
+            System.out.println("Você acertou na " + tentativas + "º tentativa");
         } else {
             System.out.println("Você errou nas 3 tentativas.");
             int pontuacaoErrada = 1;
@@ -1186,7 +1186,7 @@ public class Quiz {
 
         } while (tentativas < 3 && !acertou);
         if (acertou) {
-            System.out.println("Você acertou na " + tentativas + " tentativas");
+            System.out.println("Você acertou na " + tentativas + "º tentativa");
         } else {
             System.out.println("Você errou nas 3 tentativas.");
             int pontuacaoErrada = 1;
@@ -1283,7 +1283,7 @@ public class Quiz {
 
         } while (tentativas < 2 && !acertou);
         if (acertou) {
-            System.out.println("Você acertou na " + tentativas + " tentativas");
+            System.out.println("Você acertou na " + tentativas + "º tentativa");
         } else {
             System.out.println("Você errou nas 2 tentativas.");
             int pontuacaoErrada = 1;
@@ -1376,7 +1376,7 @@ public class Quiz {
 
         } while (tentativas < 2 && !acertou);
         if (acertou) {
-            System.out.println("Você acertou na " + tentativas + " tentativas");
+            System.out.println("Você acertou na " + tentativas + "º tentativa");
         } else {
             System.out.println("Você errou nas 2 tentativas.");
             int pontuacaoErrada = 1;
@@ -1469,7 +1469,7 @@ public class Quiz {
 
         } while (tentativas < 2 && !acertou);
         if (acertou) {
-            System.out.println("Você acertou na " + tentativas + " tentativas");
+            System.out.println("Você acertou na " + tentativas + "º tentativa");
         } else {
             System.out.println("Você errou nas 2 tentativas.");
             int pontuacaoErrada = 1;
@@ -1562,7 +1562,7 @@ public class Quiz {
 
         } while (tentativas < 2 && !acertou);
         if (acertou) {
-            System.out.println("Você acertou na " + tentativas + " tentativas");
+            System.out.println("Você acertou na " + tentativas + "º tentativa");
         } else {
             System.out.println("Você errou nas 2 tentativas.");
             int pontuacaoErrada = 1;
@@ -1655,7 +1655,7 @@ public class Quiz {
 
         } while (tentativas < 2 && !acertou);
         if (acertou) {
-            System.out.println("Você acertou na " + tentativas + " tentativas");
+            System.out.println("Você acertou na " + tentativas + "º tentativa");
         } else {
             System.out.println("Você errou nas 2 tentativas.");
             int pontuacaoErrada = 1;
@@ -1748,7 +1748,7 @@ public class Quiz {
 
         } while (tentativas < 2 && !acertou);
         if (acertou) {
-            System.out.println("Você acertou na " + tentativas + " tentativas");
+            System.out.println("Você acertou na " + tentativas + "º tentativa");
         } else {
             System.out.println("Você errou nas 2 tentativas.");
             int pontuacaoErrada = 1;
@@ -1842,7 +1842,7 @@ public class Quiz {
 
         } while (tentativas < 2 && !acertou);
         if (acertou) {
-            System.out.println("Você acertou na " + tentativas + " tentativas");
+            System.out.println("Você acertou na " + tentativas + "º tentativa");
         } else {
             System.out.println("Você errou nas 2 tentativas.");
             int pontuacaoErrada = 1;
@@ -1935,7 +1935,7 @@ public class Quiz {
 
         } while (tentativas < 2 && !acertou);
         if (acertou) {
-            System.out.println("Você acertou na " + tentativas + " tentativas");
+            System.out.println("Você acertou na " + tentativas + "º tentativa");
         } else {
             System.out.println("Você errou nas 2 tentativas.");
             int pontuacaoErrada = 1;
@@ -2028,7 +2028,7 @@ public class Quiz {
 
         } while (tentativas < 2 && !acertou);
         if (acertou) {
-            System.out.println("Você acertou na " + tentativas + " tentativas");
+            System.out.println("Você acertou na " + tentativas + "º tentativa");
         } else {
             System.out.println("Você errou nas 2 tentativas.");
             int pontuacaoErrada = 1;
@@ -2121,7 +2121,7 @@ public class Quiz {
 
         } while (tentativas < 2 && !acertou);
         if (acertou) {
-            System.out.println("Você acertou na " + tentativas + " tentativas");
+            System.out.println("Você acertou na " + tentativas + "º tentativa");
         } else {
             System.out.println("Você errou nas 2 tentativas.");
             int pontuacaoErrada = 1;
@@ -2218,7 +2218,7 @@ public class Quiz {
 
         } while (tentativas < 1 && !acertou);
         if (acertou) {
-            System.out.println("Você acertou na " + tentativas + " tentativas");
+            System.out.println("Você acertou na " + tentativas + "º tentativa");
         } else {
             System.out.println("Você errou na 1º tentativa.");
             int pontuacaoErrada = 1;
@@ -2312,7 +2312,7 @@ public class Quiz {
 
         } while (tentativas < 1 && !acertou);
         if (acertou) {
-            System.out.println("Você acertou na " + tentativas + " tentativas");
+            System.out.println("Você acertou na " + tentativas + "º tentativa");
         } else {
             System.out.println("Você errou na 1º tentativa.");
             int pontuacaoErrada = 1;
@@ -2407,7 +2407,7 @@ public class Quiz {
 
         } while (tentativas < 2 && !acertou);
         if (acertou) {
-            System.out.println("Você acertou na " + tentativas + " tentativas");
+            System.out.println("Você acertou na " + tentativas + "º tentativa");
         } else {
             System.out.println("Você errou na 1º tentativa.");
             int pontuacaoErrada = 1;
@@ -2501,7 +2501,7 @@ public class Quiz {
 
         } while (tentativas < 1 && !acertou);
         if (acertou) {
-            System.out.println("Você acertou na " + tentativas + " tentativas");
+            System.out.println("Você acertou na " + tentativas + "º tentativa");
         } else {
             System.out.println("Você errou na 1º tentativa.");
             int pontuacaoErrada = 1;
@@ -2595,7 +2595,7 @@ public class Quiz {
 
         } while (tentativas < 1 && !acertou);
         if (acertou) {
-            System.out.println("Você acertou na " + tentativas + " tentativas");
+            System.out.println("Você acertou na " + tentativas + "º tentativa");
         } else {
             System.out.println("Você errou na 1º tentativa.");
             int pontuacaoErrada = 1;
@@ -2689,7 +2689,7 @@ public class Quiz {
 
         } while (tentativas < 1 && !acertou);
         if (acertou) {
-            System.out.println("Você acertou na " + tentativas + " tentativas");
+            System.out.println("Você acertou na " + tentativas + "º tentativa");
         } else {
             System.out.println("Você errou na 1º tentativa.");
             int pontuacaoErrada = 1;
@@ -2783,7 +2783,7 @@ public class Quiz {
 
         } while (tentativas < 1 && !acertou);
         if (acertou) {
-            System.out.println("Você acertou na " + tentativas + " tentativas");
+            System.out.println("Você acertou na " + tentativas + "º tentativa");
         } else {
             System.out.println("Você errou na 1º tentativa.");
             int pontuacaoErrada = 1;
@@ -2876,7 +2876,7 @@ public class Quiz {
 
         } while (tentativas < 1 && !acertou);
         if (acertou) {
-            System.out.println("Você acertou na " + tentativas + " tentativas");
+            System.out.println("Você acertou na " + tentativas + "º tentativa");
         } else {
             System.out.println("Você errou na 1º tentativa.");
             int pontuacaoErrada = 1;
@@ -2970,7 +2970,7 @@ public class Quiz {
 
         } while (tentativas < 1 && !acertou);
         if (acertou) {
-            System.out.println("Você acertou na " + tentativas + " tentativas");
+            System.out.println("Você acertou na " + tentativas + "º tentativa");
         } else {
             System.out.println("Você errou na 1º tentativa.");
             int pontuacaoErrada = 1;
@@ -3064,7 +3064,7 @@ public class Quiz {
 
         } while (tentativas < 1 && !acertou);
         if (acertou) {
-            System.out.println("Você acertou na " + tentativas + " tentativas");
+            System.out.println("Você acertou na " + tentativas + "º tentativa");
         } else {
             System.out.println("Você errou na 1º tentativa.");
             int pontuacaoErrada = 1;
