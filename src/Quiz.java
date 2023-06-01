@@ -58,15 +58,14 @@ public class Quiz {
         System.out.println("| _________________________________________________________________________________________________|");
         System.out.println("| 2 - Selecione a resposta que você acredita ser correta.                                           ");
         System.out.println("| _________________________________________________________________________________________________|");
-        System.out.println("| 3 - Você tem até três tentativas para responder corretamente cada pergunta.                       ");
+        System.out.println("| 3 - Você tem até três tentativas na dificuldade Fácil                                            |");
+        System.out.println("|              - duas tentativas na dificuldade Médio                                              |");
+        System.out.println("|              - duas tentativas na dificuldade Dificil                                            |");
         System.out.println("| _________________________________________________________________________________________________|");
-        System.out.println("| 4 - Caso erre em uma tentativa, não desista! Você ainda tem mais duas chances para acertar.       ");
         System.out.println("| _________________________________________________________________________________________________|");
-        System.out.println("| 5 - Você tem até três tentativas para responder corretamente cada pergunta.                       ");
+        System.out.println("| 5 - Ao final do quiz, você receberá sua pontuação final com base no número de respostas corretas. ");
         System.out.println("| _________________________________________________________________________________________________|");
-        System.out.println("| 6 - Ao final do quiz, você receberá sua pontuação final com base no número de respostas corretas. ");
-        System.out.println("| _________________________________________________________________________________________________|");
-        System.out.println("| 7 - Lembre-se de que o objetivo é se divertir e testar seus conhecimentos.                        ");
+        System.out.println("| 6 - Lembre-se de que o objetivo é se divertir e testar seus conhecimentos.                        ");
         System.out.println("| _________________________________________________________________________________________________|");
 
         teclaContinuar();
